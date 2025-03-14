@@ -1,0 +1,46 @@
+@font-face {
+	font-family: "Emulogic";
+	src: url("../font/emulogic.ttf");
+}
+
+body {
+	background-color: #40d47e;
+}
+
+h1 {
+	font-family: "Emulogic";
+}
+
+#controls {
+    position: fixed;
+    bottom: 0; /* Ajuste para asegurar que los controles sean visibles */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Para dar más visibilidad */
+    padding: 10px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #ff9900;
+}
+
+canvas {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-width: 500px; /* Evita que sea más grande de lo necesario */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    margin: auto;
+}
