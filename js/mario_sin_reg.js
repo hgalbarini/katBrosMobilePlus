@@ -3,11 +3,11 @@ window.onload = function()
 	var canvas = document.getElementById("miCanvas");
 	var context = canvas.getContext("2d");
 
-	canvas.width = window.innerWidth;
+	canvas.width = 375; // iPhone X logical width
     canvas.height = window.innerHeight * 0.6;
 
 	window.addEventListener("resize", function() {
-        canvas.width = window.innerWidth;
+        canvas.width = 375;
         canvas.height = window.innerHeight * 0.6;
     });
 	
