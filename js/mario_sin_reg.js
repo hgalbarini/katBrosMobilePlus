@@ -251,7 +251,7 @@ window.onload = function()
 	musica_salto.src = "audio/sfx/jump.ogg";
 	musica_moneda.src = "audio/sfx/coin.wav";
 	musica_fondo.loop = true;
-	// musica_fondo.addEventListener('load', musica_fondo.play(), false);
+	musica_fondo.addEventListener('load', musica_fondo.play(), false);
 
 
 	//Posiciones de las imagenes de fondo
@@ -953,6 +953,12 @@ window.onload = function()
 		if(juego_terminado && keys[KEY_R])
 			iniciaJuego();
 	}
+
+	document.getElementById("restart").addEventListener("click", () => {
+		iniciaJuego(); // Call the function that restarts the game
+		console.log("Game restarted!"); // Debugging message
+	});
+	
 
 	setInterval(gameLoop, 10);
 
