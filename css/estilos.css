@@ -37,6 +37,14 @@ button:active {
     background-color: #ff9900;
 }
 
+#controls button {
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    touch-action: manipulation; /* Improve button responsiveness */
+}
+
 canvas {
     width: 100%; /* Ajusta el ancho al 100% del contenedor */
     max-width: 500px; /* Evita que sea más grande de lo necesario */

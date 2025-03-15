@@ -61,6 +61,12 @@ window.onload = function()
         });
     }
 
+
+	document.querySelectorAll("#controls button").forEach(button => {
+		button.addEventListener("contextmenu", event => event.preventDefault()); // Disable right-click menu
+	});
+
+	
     // Mantener los eventos de teclado para compatibilidad con PC
     document.onkeydown = function(e) {
         keys[e.which] = true;
